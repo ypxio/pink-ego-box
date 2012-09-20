@@ -32,7 +32,7 @@ include_once("sidebar.php");
 						$f("player", "assets/js/flowplayer/flowplayer-3.2.14.swf",{
 							clip:
 							{
-								url: 'example.flv',
+								url: 'assets/videos/example.flv',
 							},
 
 							// streaming plugins are configured normally under the plugins node
