@@ -32,7 +32,7 @@ include_once("sidebar.php");
 						$f("player", "assets/js/flowplayer/flowplayer-3.2.14.swf",{
 							clip:
 							{
-								url: 'assets/videos/Muse - MK Ultra, Turin, Italy 2009 [PROSHOT] - YouTube.flv',
+								url: 'example.flv',
 							},
 
 							// streaming plugins are configured normally under the plugins node
