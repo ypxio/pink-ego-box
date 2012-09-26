@@ -1,7 +1,9 @@
 <html>
 <head>	
 	<title>Vodele | Video On Demand with E-learning System</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet/less" type="text/css" href="assets/css/style.less">
+	<!-- <link rel="stylesheet/less" type="text/css" href="style.css"> -->
+	<script src="assets/js/less.min.js" type="text/javascript"></script>
 </head>
 <body>
 

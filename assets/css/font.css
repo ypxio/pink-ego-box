@@ -1,0 +1,14 @@
+@font-face {
+  font-family: 'Museo Normal';
+  src: url('assets/fonts/MUSEO500-REGULAR.OTF');
+}
+
+@font-face {
+  font-family: 'Museo Bold';
+  src: url('assets/fonts/Museo700-Regular.otf');
+}
+
+@font-face { font-family: 'Maven Regular';	src: url('assets/fonts/Maven Pro Regular.otf'); }
+@font-face { font-family: 'Maven Medium'; 	src: url('assets/fonts/Maven Pro Medium.otf'); }
+@font-face { font-family: 'Maven Bold'; 	src: url('assets/fonts/Maven Pro Bold.otf'); padding: 0px;}
+@font-face { font-family: 'Maven Black'; 	src: url('assets/fonts/Maven Pro Black.otf'); }

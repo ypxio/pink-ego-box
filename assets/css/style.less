@@ -1,15 +1,4 @@
-/**
-  *
-  *
-  * Dark Green : #2b430d
-  * Light Green : #b1cc63
-  * Light Blue : #449ded
-  * Dark Blue : #09182e
-  *
-  *
-  *
-  */
-
+@import "font.css";
 
 *
 {
@@ -20,23 +9,74 @@
 
 @font-face {
   font-family: 'Museo Normal';
-  src: url('assets/fonts/MUSEO500-REGULAR.OTF');
+  src: url('../fonts/MUSEO500-REGULAR.OTF');
 }
 
 @font-face {
   font-family: 'Museo Bold';
-  src: url('assets/fonts/Museo700-Regular.otf');
+  src: url('../fonts/Museo700-Regular.otf');
 }
 
-@font-face { font-family: 'Maven Regular';	src: url('assets/fonts/Maven Pro Regular.otf'); }
-@font-face { font-family: 'Maven Medium'; 	src: url('assets/fonts/Maven Pro Medium.otf'); }
-@font-face { font-family: 'Maven Bold'; 	src: url('assets/fonts/Maven Pro Bold.otf'); padding: 0px;}
-@font-face { font-family: 'Maven Black'; 	src: url('assets/fonts/Maven Pro Black.otf'); }
+@font-face { font-family: 'Maven Regular';	src: url('../fonts/Maven Pro Regular.otf'); }
+@font-face { font-family: 'Maven Medium'; 	src: url('../fonts/Maven Pro Medium.otf'); }
+@font-face { font-family: 'Maven Bold'; 	src: url('../fonts/Maven Pro Bold.otf'); padding: 0px;}
+@font-face { font-family: 'Maven Black'; 	src: url('../fonts/Maven Pro Black.otf'); }
+
+/*
+#539650
+#cbdd5b
+#eeffbc
+#d9644f
+#5c4451
+*/
+
+@dark_green 		: #539650;
+@dark_green_5 		: darken(@dark_green, 5%);
+@dark_green_10 		: darken(@dark_green, 10%);
+@dark_green_15 		: darken(@dark_green, 15%);
+@dark_green_25 		: darken(@dark_green, 25%);
+@dark_green_5_r		: lighten(@dark_green, 5%);
+@dark_green_10_r	: lighten(@dark_green, 10%);
+@dark_green_15_r	: lighten(@dark_green, 15%);
+
+@light_green		: #cbdd5b;
+@light_green_5		: darken(@light_green, 5%);
+@light_green_10		: darken(@light_green, 10%);
+@light_green_15		: darken(@light_green, 15%);
+@light_green_25		: darken(@light_green, 25%);
+@light_green_5_r	: lighten(@light_green, 5%);
+@light_green_10_r	: lighten(@light_green, 10%);
+@light_green_15_r	: lighten(@light_green, 15%);
+
+@white				: #eeffbc;
+@white_5			: darken(@white, 5%);
+@white_10			: darken(@white, 10%);
+@white_15			: darken(@white, 15%);
+@white_5_r			: lighten(@white, 5%);
+@white_10_r			: lighten(@white, 10%);
+@white_15_r			: lighten(@white, 15%);
+
+@light_violet		: #d9644f;
+@light_violet_5		: darken(@light_violet, 5%);
+@light_violet_10	: darken(@light_violet, 10%);
+@light_violet_15	: darken(@light_violet, 15%);
+@light_violet_25	: darken(@light_violet, 25%);
+@light_violet_5_r	: lighten(@light_violet, 5%);
+@light_violet_10_r	: lighten(@light_violet, 10%);
+@light_violet_15_r	: lighten(@light_violet, 15%);
+
+@dark_violet		: #5c4451;
+@dark_violet_5		: darken(@dark_violet, 5%);
+@dark_violet_10		: darken(@dark_violet, 10%);
+@dark_violet_15		: darken(@dark_violet, 15%);
+@dark_violet_5_r	: lighten(@dark_violet, 5%);
+@dark_violet_10_r	: lighten(@dark_violet, 10%);
+@dark_violet_15_r	: lighten(@dark_violet, 15%);
 
 body
 {
 	/*background: url('assets/images/bg.png');*/
-	background-color: #f6ead0;
+	background-color: @white;
 	font-family: Maven Regular
 }
 /* !!!!!!!!!!!!!!!! GLOBAL CONFIGURATION !!!!!!!!!!!!!!!! */
@@ -85,19 +125,19 @@ nav.inline ul li
 
 .button
 {
-	border: 1px solid #ccc;
+	border: 1px solid @light_green_15;
 	cursor: pointer;
 	border-radius: 5px;
-	color: #666;
-	background-color: #eee;
+	color: @dark_green;
+	background-color: @light_green;
 	padding: 10px;
 }
 
 .button:hover
 {
-	background-color: #0089E1;
-	color: white;
-	border: 1px solid #037FC9;
+	background-color: @light_green_15;
+	color: @dark_green_15;
+	/*border: 1px solid #037FC9;*/
 }
 
 input[type="text"]
@@ -109,6 +149,7 @@ input[type="text"]
 	font-family: Maven Regular;
 	color: #999;
 	outline: none;
+	background-color: @white
 }
 
 input[type="text"]:hover
@@ -118,9 +159,9 @@ input[type="text"]:hover
 
 input[type="text"]:focus
 {
-	color: #0089E1;
-	border: 1px solid #0089E1;
-	box-shadow: 0 0 7px #0089E1;
+	color: @dark_green_10_r;
+	border: 1px solid @dark_green_15;
+	box-shadow: 0 0 7px @light_green;
 }
 
 .hidden
@@ -135,9 +176,9 @@ input[type="text"]:focus
 
 	header
 	{
-		background-color: #0089E1;
-		background-color: #2b430d;
-		border-top: 5px solid orange;
+		/*background-color: #0089E1;*/
+		background-color: @dark_green;
+		border-top: 5px solid @dark_green_10;
 		/*box-shadow: inset 0 -1px 3px #006196, 0 2px 5px #aaa;*/
 	}
 
@@ -163,29 +204,23 @@ input[type="text"]:focus
 				font-size: 14px;
 			}
 
-				header .container nav.login ul li a, footer nav ul li a
+				header .container nav.login ul li a
 				{
-					color: white;
+					color: @light_green_10;
 					margin-left: 20px;
-					opacity: 0.5;
-					-moz-opacity: 0.5;
-					filter:alpha(opacity=5);
-					text-shadow: 0px 2px #006BBB;
+					text-shadow: 0px 2px @dark_green_15;
 				}
 
-				header .container nav.login ul li a:hover, footer nav ul li a:hover
+				header .container nav.login ul li a:hover
 				{
-					opacity: 0.9;
-					-moz-opacity: 0.9;
-					filter:alpha(opacity=9);
-					text-shadow: 0px 2px #002AFF;
+					text-shadow: 0px 2px @dark_green_15;
 				}
 
 nav#primary_menu
 {
 	height: 50px;
 	/*background: #00619e;*/
-	background: #b1cc63;
+	background: @light_green;
 	/*background-image: url('assets/images/bg.png');*/
 	
 	/*background: url('assets/images/bg.png');*/
@@ -204,18 +239,19 @@ nav#primary_menu ul.left li a
 {
 	margin-right: 20px;
 	font-family: Maven Bold;
-	color: #0089E1;
-	text-shadow: 1px 2px 0px #003d63;
+	color: @light_green_25;
+	text-shadow: 0px 1px 0px @light_green_15_r;
 }
 
 nav#primary_menu ul li a:hover
 {
-	color: #7fc4f0;
+	color: @dark_green;
 }
 
 nav#primary_menu ul li a.active
 {
 	color: white;
+	text-shadow: 0px 2px 0px @light_green_15;
 }
 
 nav#primary_menu ul.right li a
@@ -259,14 +295,13 @@ nav#primary_menu ul.right li a:hover
 
 		section#content .container
 		{
-			background-color: white;
+			background-color: @dark_green;
 			/*min-height: 500px;*/
-			border: 1px solid #d1d1d1;
+			border: 1px solid @white_15;
 			border-radius: 5px;
 			overflow: auto;
-			background: url('assets/images/bg2.png');
-			box-shadow: 0px 0px 10px #ccc, 0px 5px 0px #ddd;
-
+			/*background: url('assets/images/bg2.png');*/
+			/*box-shadow: 0px 0px 10px @light_green_5*/
 		}
 
 			section#content .container #mainbar
@@ -275,8 +310,8 @@ nav#primary_menu ul.right li a:hover
 				min-height: 300px;
 				/*background-color: #DDD;*/
 				float: right;
-				border-left: 1px solid #d1d1d1;
-				background-color: white;
+				/*border-left: 1px solid #d1d1d1;*/
+				background-color: @white_10_r;
 				border-radius: 0 5px 5px 0;
 				padding-top: 20px;
 				/*background-color: blue*/
@@ -292,15 +327,15 @@ nav#primary_menu ul.right li a:hover
 				section#content .container #mainbar h1.title
 				{
 					display: block;
-					background: #efefef;
-					color: #777;
+					background: @light_green;
+					color: @light_green_25;
 					padding: 15px 0 10px 20px;
 					font-family: Maven Bold;
-					border-top: 1px solid #d1d1d1;
-					border-bottom: 1px solid #d1d1d1;
-					text-shadow: 1px 2px white;
-					background: url('assets/images/bg2.png');
-					box-shadow: inset 0 2px 2px #ddd, inset 0 -2px 2px #ddd;
+					border-top: 1px solid @light_green_15;
+					border-bottom: 1px solid @light_green_15;
+					text-shadow: 0px 2px 0px @light_green_15_r;
+					/*background: url('assets/images/bg2.png');*/
+					box-shadow: inset 0 2px 2px @light_green_10, inset 0 -2px 2px @light_green_10;
 				}
 
 				section#content .container #mainbar #main_content
@@ -454,7 +489,7 @@ nav#primary_menu ul.right li a:hover
 	footer#first
 	{
 		/*background-color: #007cc3;*/
-		background-color: #449ded;
+		background-color: @light_violet;
 		/*box-shadow: inset 0 -3px 5px #006196, inset 0 3px 4px #006196*/
 	}
 
@@ -464,6 +499,7 @@ nav#primary_menu ul.right li a:hover
 			overflow: auto;
 			padding: 20px 0 20px 0;
 		}
+
 
 			footer#first .container #link
 			{
@@ -484,12 +520,24 @@ nav#primary_menu ul.right li a:hover
 					{
 						line-height: 25px;
 						font-size: 15px;
+						color: @light_violet_15;
+						text-shadow: 0px 1px 0px @light_violet_10_r;
+						font-family: Maven Bold;
 					}
+
+					footer#first .container #link nav ul li a:hover
+					{
+						color: @light_violet_25;
+					}
+
 					footer#first .container #link nav ul li a.title
 					{
 						display: block;
 						margin-bottom: 5px;
-						opacity: 1.0;
+						color: @light_violet_25;
+						/*opacity: 1.0;*/
+						/*color: @light_violet_15_r;*/
+						/*color: white;*/
 						font-family: Maven Bold;
 					}
 
@@ -504,8 +552,8 @@ nav#primary_menu ul.right li a:hover
 	footer#second
 	{
 		/*background-color: #0089E1;*/
-		background-color: #09182e;
-		box-shadow: inset 0 1px 1px #3da9ed;
+		background-color: @dark_violet;
+		box-shadow: inset 0 1px 1px @light_violet_15;
 	}
 
 		footer#second .container
@@ -528,8 +576,8 @@ nav#primary_menu ul.right li a:hover
 			top: 20px;
 			font-size: 12px;
 			/*opacity: 0.5;*/
-			color: #006196;
-			text-shadow: 1px 1px 0px #3da9ed;
+			color: @dark_violet_15;
+			text-shadow: 1px 1px 0px @dark_violet_10_r;
 		}
 
 
