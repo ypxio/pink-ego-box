@@ -1,0 +1,60 @@
+
+[login]
+- username*
+- password
+- level
+
+[user]
+- username
+- first_name
+- last_name
+- email
+- birth_date
+- gender
+- occupation
+
+- join_date
+- avatar
+- 
+
+[user_log]
+- username*
+- total_login
+- profile_views
+
+[course]
+- username*
+- id_course
+- name_course
+- desc_course
+
+[video]
+- username*
+- id_video
+- name_video
+- desc_video
+- id_course*
+- path_to_video
+
+- like
+- download_count
+- view_count
+- time
+
+[categories]
+- id_category
+- name_category
+- id_video*
+
+[comment]
+- id_comment
+- content_comment
+- id_video*
+
+[favourite_video]
+- username*
+- id_video
+
+[favourite_course]
+- username*
+- id_course

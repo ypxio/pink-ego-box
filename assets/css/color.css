@@ -1,0 +1,42 @@
+@dark_green 		: #539650;
+@dark_green_5 		: darken(@dark_green, 5%);
+@dark_green_10 		: darken(@dark_green, 10%);
+@dark_green_15 		: darken(@dark_green, 15%);
+@dark_green_25 		: darken(@dark_green, 25%);
+@dark_green_5_r		: lighten(@dark_green, 5%);
+@dark_green_10_r	: lighten(@dark_green, 10%);
+@dark_green_15_r	: lighten(@dark_green, 15%);
+
+@light_green		: #cbdd5b;
+@light_green_5		: darken(@light_green, 5%);
+@light_green_10		: darken(@light_green, 10%);
+@light_green_15		: darken(@light_green, 15%);
+@light_green_25		: darken(@light_green, 25%);
+@light_green_5_r	: lighten(@light_green, 5%);
+@light_green_10_r	: lighten(@light_green, 10%);
+@light_green_15_r	: lighten(@light_green, 15%);
+
+@white				: #eeffbc;
+@white_5			: darken(@white, 5%);
+@white_10			: darken(@white, 10%);
+@white_15			: darken(@white, 15%);
+@white_5_r			: lighten(@white, 5%);
+@white_10_r			: lighten(@white, 10%);
+@white_15_r			: lighten(@white, 15%);
+
+@light_violet		: #d9644f;
+@light_violet_5		: darken(@light_violet, 5%);
+@light_violet_10	: darken(@light_violet, 10%);
+@light_violet_15	: darken(@light_violet, 15%);
+@light_violet_25	: darken(@light_violet, 25%);
+@light_violet_5_r	: lighten(@light_violet, 5%);
+@light_violet_10_r	: lighten(@light_violet, 10%);
+@light_violet_15_r	: lighten(@light_violet, 15%);
+
+@dark_violet		: #5c4451;
+@dark_violet_5		: darken(@dark_violet, 5%);
+@dark_violet_10		: darken(@dark_violet, 10%);
+@dark_violet_15		: darken(@dark_violet, 15%);
+@dark_violet_5_r	: lighten(@dark_violet, 5%);
+@dark_violet_10_r	: lighten(@dark_violet, 10%);
+@dark_violet_15_r	: lighten(@dark_violet, 15%);

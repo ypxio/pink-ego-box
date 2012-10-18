@@ -1,0 +1,178 @@
+/**
+
+<div id="hulu" class="hulu">
+	<a class="pause">play</a>
+		<div class="track">
+			<div class="buffer" style="width: 460px; "/>
+			<div class="progress" style="width: 37px; "/>
+			<div class="playhead" style="left: -423px; "/>
+		</div>
+		<div class="time">
+			<span>00:15</span>
+			<strong>04:13</strong>
+		</div>
+	<a class="unmute">mute</a>
+</div>
+
+*/
+
+@dark_green 		: #539650;
+@dark_green_5 		: darken(@dark_green, 5%);
+@dark_green_10 		: darken(@dark_green, 10%);
+@dark_green_15 		: darken(@dark_green, 15%);
+@dark_green_25 		: darken(@dark_green, 25%);
+@dark_green_5_r		: lighten(@dark_green, 5%);
+@dark_green_10_r	: lighten(@dark_green, 10%);
+@dark_green_15_r	: lighten(@dark_green, 15%);
+
+@light_green		: #cbdd5b;
+@light_green_5		: darken(@light_green, 5%);
+@light_green_10		: darken(@light_green, 10%);
+@light_green_15		: darken(@light_green, 15%);
+@light_green_25		: darken(@light_green, 25%);
+@light_green_5_r	: lighten(@light_green, 5%);
+@light_green_10_r	: lighten(@light_green, 10%);
+@light_green_15_r	: lighten(@light_green, 15%);
+
+@white				: #eeffbc;
+@white_5			: darken(@white, 5%);
+@white_10			: darken(@white, 10%);
+@white_15			: darken(@white, 15%);
+@white_5_r			: lighten(@white, 5%);
+@white_10_r			: lighten(@white, 10%);
+@white_15_r			: lighten(@white, 15%);
+
+@light_violet		: #d9644f;
+@light_violet_5		: darken(@light_violet, 5%);
+@light_violet_10	: darken(@light_violet, 10%);
+@light_violet_15	: darken(@light_violet, 15%);
+@light_violet_25	: darken(@light_violet, 25%);
+@light_violet_5_r	: lighten(@light_violet, 5%);
+@light_violet_10_r	: lighten(@light_violet, 10%);
+@light_violet_15_r	: lighten(@light_violet, 15%);
+
+@dark_violet		: #5c4451;
+@dark_violet_5		: darken(@dark_violet, 5%);
+@dark_violet_10		: darken(@dark_violet, 10%);
+@dark_violet_15		: darken(@dark_violet, 15%);
+@dark_violet_5_r	: lighten(@dark_violet, 5%);
+@dark_violet_10_r	: lighten(@dark_violet, 10%);
+@dark_violet_15_r	: lighten(@dark_violet, 15%);
+
+.hulu
+{
+	position: relative;
+	height: 38px;
+	margin-top: 5px;
+	background-color: red;
+	background: url('../../../assets/images/bg.png');
+	border: 1px solid #d1d1d1;
+}
+
+.pause, .play, .track, .time, .unmute, .mute
+{
+	position: absolute;
+}
+
+.pause, .play
+{
+	left: 0px;
+	height: 19px;
+	width: auto;
+	padding: 10px 20px 10px 20px;
+	color: @light_violet_15_r;
+	/*background: blue;*/
+	cursor: pointer;
+	background-color: @light_violet;
+	z-index: 9999;
+	width: 30px;
+	text-align: center;
+	/*color: #006196;*/
+	/*text-shadow: 1px 1px 0px #3da9ed;*/
+	/*box-shadow: inset 0 -3px 5px #006196, inset 0 3px 4px #006196*/
+}
+
+.pause:hover, .play:hover
+{
+	background-color: @light_violet_10;
+	color: white;
+}
+
+.track
+{
+	width: 700px;
+	height: 40px;
+	position: absolute;
+	left: 70px;
+	/*background: #ddd;*/
+	cursor: pointer
+}
+
+.progress, .buffer
+{
+	position: absolute;
+	/*background: orange;*/
+	height: 39px;
+	width: 0px;
+	/*left: 70px;*/
+}
+
+.progress
+{
+	background: @light_violet_15_r;
+	opacity: 0.5
+}
+.buffer
+{
+	/*background: maroon;*/
+	width: 600px;
+}
+
+.playhead {
+    position:absolute;
+    cursor:pointer;
+    width: 5px;
+    background: orange;
+    height: 39px;
+
+    /*left: 160px;*/
+    }
+
+.playhead:hover
+{
+	background: maroon
+}
+
+.time
+{
+	right: 0px;
+	height: 19px;
+	padding: 10px 20px 10px 20px;
+	background: @dark_green;
+	color: white;
+	width: 110px;
+	text-align: center
+}
+
+.unmute
+{
+	right: 20px;
+	display: none
+}
+
+#video_full
+{
+	padding: 5px;
+	border: 1px solid #d1d1d1;
+}
+
+#video_full a object
+{
+	width: 100%;
+	height: 480px;
+}
+
+#video_full a#player
+{
+	border-radius: 5px
+}
